@@ -33,11 +33,11 @@
 
     Open the file manager and head over to the apps section
 
-    ![main screen](images/file%20manager%20plus.png)
+    <img width="60%" src="images/file%20manager%20plus.png">
 
     Once you're there, find "Water?", then tap and hold it to select the app
 
-    ![apps](images/file%20manager%20apps.png)
+    <img width="60%" src="images/file%20manager%20apps.png">
 
     Once you've done that, all you need to do then is tap share, File Manager +, then select a detination folder.
 
