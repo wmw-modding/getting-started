@@ -88,3 +88,15 @@ Click on the folder icon, or file > Open APK. Select the wmw APK. It should deco
 You're now all set to start modding!
 
 ## Modding `water.db`
+
+`water.db` is where all the data for the game is stored, such as level info, collectables, default settings and more. This is not needed to mod, but it's important to know if you want to change the name of a level, and/or the path to it. `water-lite.db` and `water-demo.db` are similar, but they hold the data for the lite and demo versions. If you have the full apk, you won't need to modify these.
+
+Alright, let's get started.
+
+In Apk Editor Studio (apk editor), click `Open Contents`. All the assets are in the `assets` folder. The later games tend to have the assets be in `assets/game-name`, such as `assets/perry`. `water.db` may also be under a different name, but it should be pretty easy to figure out. `water.db` is located in `assets/Data/water.db`.
+
+Open `water.db` in DB Browser. This is where all the editing is going to be.
+
+DB Browser is kind of weird. You need to go into the `Browse Data` tab to edit the contents. There are many different tables, some notable ones are, `HubInfo`, `LevelInfo`, `LevelPackInfo`, and `PlayerData`.
+
+To edit a cell, just double click it. It will edit in another view. Once you're done editing the cell, you need to click apply. Alternately, you can just click the cell, and start typing to edit it directly. It will edit it in the cell, and when you click out of it, it will save, just like google sheets.
