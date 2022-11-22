@@ -4,19 +4,24 @@
   - [What you need](#what-you-need)
     - [Getting the apk](#getting-the-apk)
 - [Start modding](#start-modding)
+  - [Setup](#setup)
 
 
 ## What you need
 
 * Where's My Water apk
 
+* [APK Editor Studio](https://github.com/kefir500/apk-editor-studio)
+
 * [apktool](https://ibotpeaches.github.io/Apktool/install/)
 
-* [APK Editor Studio](https://github.com/kefir500/apk-editor-studio)
+* [apksigner](https://developer.android.com/studio) (unfortunately, you need to install android studio to get it).
 
 * [adb](https://developer.android.com/studio/releases/platform-tools)
 
-* [apksigner](https://developer.android.com/studio) (unfortunately, you need to install android studio to get it).
+* [Java](https://www.java.com/)
+
+* [DB Browser](https://sqlitebrowser.org/dl/)
 
 
 ### Getting the apk
@@ -54,3 +59,37 @@
     If you're on an emulator, then there's probobly some way to copy files to your pc without a cord.
     
 # Start modding
+
+## Setup
+Before you start modding, you need to extract the apk, fortunately, APK Editor Studio has you covered.
+
+To start, open APK Editor Studio. You will need to set some things up before we extract the apk.
+
+Under Settings, click options.
+
+- Go into the Java tab, click browse, and enter the Java directory.
+
+- Go into the ApkTool tab. Set the path to `apktool.jar` that you downloaded. You should change the extraction path to something that is easier to access. Leave the frameworks path unchanged.
+
+  If you want to modify the code, then select Decompile Source Code (smali).
+
+- In the ApkSigner tab, enter the path to it.
+
+  Open Android Studio. If you installed it for the first time, you probably downloaded the Android SDK Tools.
+  
+  If you didn't download it, then  go into settings, head over to Appearance & Behavior > System Settings > Android SDK, then go into the SDK Tools tab. Check `Android SDK Build Tools`, then click OK. It will then download it.
+  
+  The path to the SDK Build Tools is likely in `%localappdata%\Android\Sdk\build-tools\`. The path to `apksigner.jar` is `\lib\apksigner.jar`. I recommend copying the file to some other, easier to access folder.
+
+  Once you have the path to ApkSigner, you should create a keystore. Open the Key Manager, then check custom keystore. After that click create (both buttons do the same thing). Enter the information (you can enter fake info). Only the passwords, alias, and name are required. Do not share the password(s).
+
+  If it throws an error when you press ok, then you need to check that you entered the correct path to Java.
+
+- Finally, you need to add the path to ADB in the ADB tab. This is only needed if you want to use the android explorer, or install the app directly to you device from this program.
+
+Once you got that setup, it's time to unpack the apk.
+
+Click on the folder icon, or file > Open APK. Select the wmw APK. It should decompress the apk after that.
+
+You're now all set to start modding!
+
