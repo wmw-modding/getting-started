@@ -6,6 +6,9 @@
 - [Start modding](#start-modding)
   - [Setup](#setup)
   - [Modding `water.db`](#modding-waterdb)
+  - [Modding levels](#modding-levels)
+    - [The `png` file](#the-png-file)
+    - [The `xml` file](#the-xml-file)
 
 
 ## What you need
@@ -100,3 +103,25 @@ Open `water.db` in DB Browser. This is where all the editing is going to be.
 DB Browser is kind of weird. You need to go into the `Browse Data` tab to edit the contents. There are many different tables, some notable ones are, `HubInfo`, `LevelInfo`, `LevelPackInfo`, and `PlayerData`.
 
 To edit a cell, just double click it. It will edit in another view. Once you're done editing the cell, you need to click apply. Alternately, you can just click the cell, and start typing to edit it directly. It will edit it in the cell, and when you click out of it, it will save, just like google sheets.
+
+## Modding levels
+
+Now here comes the fun part, editing the levels.
+
+The levels are stored in `assets/Levels`. Each level has an `xml` and `png` file.
+
+### The `png` file
+
+This file is where all the liquids and terrain is defined. This can be edited in any image editor, although saving is a bit specific. The bit depth has to be 8-bit, so you need to be able to save the file to a specific bit depth. I recommend [Paint.net](https://getpaint.net/), although photoshop might also work. The image has a width of 90px, and usually has a height of 120px, although levels can have a bigger or smaller height. I'm not sure if the width can be bigger of smaller than 90px, but I'm pretty sure it can be.
+
+Here's the color mapping
+
+<img width="60%" src="images/color%20mapping.png">
+
+This image can be found at `assets/Levels/LevelEditor.psd`. To open it in pain.net, you need the [PSD Plugin](https://www.psdplugin.com/). It will open just fine in PhotoShop since it's a PhotoShop file.
+
+### The `xml` file
+
+This is where all the objects and level metadata are defined. To make the editing experience better, it's best to use [Where's My Editor](https://github.com/wmw-modding/wheres-my-editor), (WIP).
+
+More will be explained at a later date.
