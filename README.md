@@ -5,24 +5,18 @@
     - [Getting the apk](#getting-the-apk)
 - [Start modding](#start-modding)
   - [Setup](#setup)
+  - [Modding `water.db`](#modding-waterdb)
 
 
 ## What you need
 
 * Where's My Water apk
-
 * [APK Editor Studio](https://github.com/kefir500/apk-editor-studio)
-
 * [apktool](https://ibotpeaches.github.io/Apktool/install/)
-
 * [apksigner](https://developer.android.com/studio) (unfortunately, you need to install android studio to get it).
-
 * [adb](https://developer.android.com/studio/releases/platform-tools)
-
 * [Java](https://www.java.com/)
-
 * [DB Browser](https://sqlitebrowser.org/dl/)
-
 
 ### Getting the apk
 
@@ -93,3 +87,4 @@ Click on the folder icon, or file > Open APK. Select the wmw APK. It should deco
 
 You're now all set to start modding!
 
+## Modding `water.db`
