@@ -9,6 +9,7 @@
   - [Modding levels](#modding-levels)
     - [The `png` file](#the-png-file)
     - [The `xml` file](#the-xml-file)
+- [Finishing the mod](#finishing-the-mod)
 
 
 ## What you need
@@ -125,3 +126,18 @@ This image can be found at `assets/Levels/LevelEditor.psd`. To open it in pain.n
 This is where all the objects and level metadata are defined. To make the editing experience better, it's best to use [Where's My Editor](https://github.com/wmw-modding/wheres-my-editor), (WIP).
 
 More will be explained at a later date.
+
+# Finishing the mod
+
+Alright, it's time to test the mod.
+
+You first need to make sure everything is saved. Then in APK Editor, open the key manager. Make sure you have a keystore with the correct details entered. If you didn't create one, then you should. Once you made sure you have a keystore file setup, just click on the box (save APK) next to the folder (Open APK), or file > Save APK. Enter the location you want to save the APK to.
+
+Once it's finished saving, copy the APK onto your device. If you have ADB setup, you should be able to click `Install APK` to install it directly to your device. If that doesn't work, you can open a command prompt and enter
+```
+adb uninstall com.disney.WMW
+adb install file.apk
+```
+(uninstall the app first to avoid errors when installing)
+
+You're now all set to open the app, and see if your mod worked!
